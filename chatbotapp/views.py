@@ -8,11 +8,11 @@ model_name = 'KoichiYasuoka/bert-base-japanese-wikipedia-ud-head'
 model = AutoModelForQuestionAnswering.from_pretrained(model_name)
 
 # Create your views here.
-def home(request):
+def index(request):
       """
       http://127.0.0.1:8000/で表示されるページ
       """
-      return render(request, 'home.html')
+      return render(request, 'index.html')
 
 def reply(question):
 
